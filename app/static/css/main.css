@@ -1,0 +1,211 @@
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.trial{
+    display: flex;
+    justify-content: center;
+}
+nav{
+    background-color: black!important;
+    height: 35px;
+
+}
+#navbarNav{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black!important; */
+
+}
+#navbarNav ul li a{
+    color: white !important;
+    font-size: 14px;
+
+}
+#navbarNav ul:nth-child(1){
+    margin-left: 50px;
+
+}
+#navbarNav ul:nth-child(2){
+    margin-right: 50px;
+
+
+}
+
+.kibaki{
+    display: flex;
+}
+
+.kibaki img{
+    height: 80px;
+    width: 80px;
+}
+.ronaldo{
+    display: flex;
+    margin-right:165px;
+
+}
+.ronaldo img{
+    height: 80px;
+    width: 80px;
+}
+
+#top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#top .kibaki:nth-child(1){
+    margin-left: 65px;
+
+
+}
+.latest{
+    margin-top: 15px;
+    margin-left: 10px;
+
+}
+.text-secondary{
+    color: grey!important;
+    font-size: 14px;
+    line-height: .1rem;
+    position: relative;
+    top: 5%;
+
+}
+
+.latest h6{
+    font-weight: 700;
+    margin-top:5px
+}
+
+#top h1{
+    font-weight: 600;
+    font-size: 53px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#top h1 span{
+    color: red;
+}
+
+.ronaldo h6{
+    font-weight: 600;
+    margin-top:5px;
+    margin-left: 5px;
+}
+
+.latest2{
+    margin-top: 15px;
+}
+
+#section2{
+    margin-top: 20px;
+
+}
+#section2  nav{
+    height: 60px;
+}
+
+
+#section2 #navbarNav ul li a{
+    color: black !important;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 10px;
+
+}
+
+#section2 #navbarNav  .search {
+    color: red!important;
+    margin-right:120px ;
+}
+
+
+.brkingNews{
+    margin-left: 60px;
+    background-color: red;
+    padding: 5px;
+    width: 150px;
+    color: white;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#section3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user{
+    margin-right: 90px;
+}
+
+.div{
+    display: flex;
+}  
+
+.div p:nth-child(2){
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: rgb(170, 167, 167);
+}
+
+.col-lg-3, .col-lg-6{
+  text-align: center;
+}
+
+.row{
+    width: 80%;
+    height: 350px;
+   
+  
+}
+
+.row img{
+    width: 100%;
+
+    
+}
+
+
+.last{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.last img:nth-child(1){
+    height: 40%;
+    object-fit: cover;
+
+
+}
+
+
+.last img:nth-child(2){
+    height: 40%;
+    object-fit: cover;
+    margin-top: 4px;
+
+}
+
+.second , .first, .last{
+    height: 100%;
+}
+
+.first img , .second img{
+    height: 90%;
+    object-fit: cover;
+
+}
+
+

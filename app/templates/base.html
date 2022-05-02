@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,18 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Libre+Bodoni:wght@500&family=Montserrat+Alternates&family=Montserrat:wght@100&family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='static/main.css')}}"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Libre+Bodoni:wght@500&family=Montserrat+Alternates&family=Montserrat:wght@100&family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 
-    {%if title %}
-    <title>{{title}} -newsPro.</title>
-    {%else%}
-    <title>-newsPro</title>
-    {endif}
+    <script src="https://kit.fontawesome.com/02a4bd3e3a.js" crossorigin="anonymous"></script>
+
+
+    {% if title%}
+        <title>{{titile}}- NewsPro.</title>
+    {% else%}
+        <title>NewsPro.</title>
+    {%endif%}
 </head>
-<body>
-    
+
+<!-- navbar starts here -->
+<nav class="navbar navbar-expand-lg navbar-light  top" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav"  >
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+       
+      </ul>
+      <ul class="navbar-nav sm-icons">
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-pinterest-p"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-google-plus-g"></i></i></a></li>   
+      </ul>
+    </div>
+  </nav>
+
+  <!-- end of navbar -->
+  <body>
+
+  <!-- toppart begin -->
+  <section id="top">
+      <div class="kibaki">
+            <img src="{{url_for('static', filename='img/mwai.jpeg')}}" alt="">
+            <div class="latest">
+                    <p class="text-secondary">Latest News</p>
+                    <h6 >Kenya third president <br>
+                        dies at the age of 92
+                    </h6>
+
+          </div>
+      </div>
+      <h1>NewsPro <span>.</span></h1>
+      <div class="ronaldo">
+            <img src="{{url_for('static', filename='img/trump.jpeg')}}" alt="">
+                <div class="latest2" >
+                    <p class="text-secondary" style="margin-left: 5px;">Top News</p>
+
+                    <h6>Will Elon bring<br> him back? </h6>
+
+                </div>
+
+        
+      </div>
+
+  </section>
+
+  <!-- section2 starts here -->
+  <section id="section2">
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-light" id="nav2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav"  >
+            <ul class="navbar-nav">
+                <li class="nav-item active bars">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-bars"></i></i></i></a></li>   
+
+                  </li>
+            </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span>
+            </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BCC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CNN</a>
+            </li>
+            <li class="nav-item">
+                
+                <a class="nav-link" href="#">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Science</a>
+              </li>
+          </ul>
+          <ul class="navbar-nav search">
+            <li class="nav-item active">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass "></i></i></i></a></li>   
+
+              </li>
+        </ul>
+
+  </section>
+  <section id="section3" >
+      <div class="div">
+        <p class="brkingNews">BREAKING NEWS</p>
+        <p >Cane collapes at Falmouth Docker in ranger</p>
+
+      </div>
 
 
-    
+  </section>
+
+
+    <div class="trial">
+        {% block content%}
+        <!-- Gallery -->
+
+<!-- Gallery -->
+   
+        {%endblock content%}
+    </div>
+   
 </body>
 </html>

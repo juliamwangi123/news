@@ -3,7 +3,7 @@ class Config:
     '''
     General configuration parent class
     '''
-    MOVIE_API_BASE_URL ="https://newsapi.org/v2/top-headlines?country=us&apiKey={}"
+    # MOVIE_API_BASE_URL ="https://newsapi.org/v2/top-headlines?country=us&apiKey={}"
 
 
 

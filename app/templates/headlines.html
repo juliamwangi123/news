@@ -1,0 +1,61 @@
+
+
+
+
+
+
+{% extends 'base.html'%}
+
+{%block content%}
+{%for new, des, i, cont  in context %}
+
+    <img src="{{i}}" alt="" style="height: 200px; width: 200px;">
+    <h3>News: </h3> {{new}}
+    <h4>Description:  {{des}}     <a href="cont">Read more....</a>
+    </h4>
+    <p>{{name}}</p>
+
+    {% endfor %}
+{%endblock%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    {% for new, des, i, cont  in context %}
+
+    <img src="{{i}}" alt="" style="height: 200px; width: 200px;">
+    <h3>News: </h3> {{new}}
+    <h4>Description:  {{des}}     <a href="cont">Read more....</a>
+    </h4>
+    <p>{{name}}</p>
+
+    {% endfor %}
+</body>
+</html> -->
