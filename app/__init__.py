@@ -1,6 +1,6 @@
 from app.config import DevConfig
 from gettext import install
-from flask import Flask
+from flask import Flask, url_for
 from requests import request
 
 # initialize the app
