@@ -319,3 +319,8 @@ position: relative;
     font-size: 15px;
     border-radius: 5px;
 }
+
+#bbctop{
+    border: 2px solid red;
+    background-color: #b80000;;
+}

@@ -53,6 +53,7 @@ def bbc():
     src =[]
     timePosted=[]
 
+
     for i in range(len(articles)):
         myarticles = articles[i]
 
@@ -65,4 +66,4 @@ def bbc():
 
 
     mylist = zip(news, desc, img, src, timePosted)
-    return render_template('bbc.html', title="bbc")
+    return render_template('bbc.html', title="bbc", context=mylist)

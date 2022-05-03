@@ -52,30 +52,8 @@
   <body>
 
   <!-- toppart begin -->
-  <section id="top">
-      <div class="kibaki">
-            <img src="{{url_for('static', filename='img/mwai.jpeg')}}" alt="">
-            <div class="latest">
-                    <p class="text-secondary">Latest News</p>
-                    <h6 >Kenya third president <br>
-                        dies at the age of 92
-                    </h6>
-
-          </div>
-      </div>
-      <h1>NewsPro <span>.</span></h1>
-      <div class="ronaldo">
-            <img src="{{url_for('static', filename='img/trump.jpeg')}}" alt="">
-                <div class="latest2" >
-                    <p class="text-secondary" style="margin-left: 5px;">Top News</p>
-
-                    <h6>Will Elon bring<br> him back? </h6>
-
-                </div>
-
-        
-      </div>
-
+  <section id="bbctop">
+      
   </section>
 
   <!-- section2 starts here -->
@@ -117,5 +95,23 @@
 
               </li>
         </ul>
+
+  </section>
+  <section>
+
+    {% for new, des, i, cont,time in context %}
+    <div class="data">
+
+    <img src="{{i}}" alt="" style="height: 80px;width: 80px;">
+    <div class="inside">
+        <p>{{new}}. <a href="{{cont}}">Read More..</a></p> 
+
+        <small class="time">Published at: {{time}}</small>
+    </div>
+   
+</div>
+
+    {%endfor%}
+
 
   </section>
