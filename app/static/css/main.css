@@ -472,25 +472,22 @@ nav #bbcnav ul li  {
 .news-card {
     /* position: relative; */
     height: 450px;
-    border: 2px solid blue;
+    border: 2px solid silver;
     width: 350px;
     margin:10px
     }
 
-/* .news-card-link {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-      } */
 
-      .news-card-image {
+
+    .news-card-image {
         width: 100%;
         height: 70%; 
        
       } 
+
+      .carditle{
+          font-weight: 800;
+      }
 
       
     
