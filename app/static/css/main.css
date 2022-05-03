@@ -324,3 +324,35 @@ position: relative;
     border: 2px solid red;
     background-color: #b80000;;
 }
+
+#bbctop h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+ nav #bbcnav{
+     color: white!important;
+ }
+nav #bbcnav ul li a {
+    color: black!important;
+    font-size: 14px;
+    font-weight: 800;
+
+}
+
+nav #bbcnav {
+    background-color: white;
+}
+
+nav #bbcnav  ul {
+    display: flex;
+    text-align: center;
+}
+
+nav #bbcnav ul li  {
+    
+    /* background-color: teal; */
+    margin-left: 80px;
+    border-left: 2px solid silver;
+}
