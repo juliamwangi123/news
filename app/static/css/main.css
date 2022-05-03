@@ -253,6 +253,7 @@ margin-top: 60px;
 display: flex;  
 flex-wrap: wrap;
 /* height: 500px; */
+position: relative;
 
 
 }
@@ -273,5 +274,13 @@ flex-wrap: wrap;
 hr{
     width: 4px;
 }
+.heading{
+    position: absolute;
+    top: -5%;
+}
 
+.heading p{
+    font-size: 14px;
+    font-weight: 700;
+}
 

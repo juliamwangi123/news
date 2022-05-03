@@ -158,12 +158,23 @@
           
         </div>
       </div>
+      <hr>
+
+
   </section>
   
 
+  </div>
+
   <section class="container" id="section5">
-        {% for new, des, i, cont in context %}
-        <div class="  data">
+    <div class="heading">
+        <p>Recent Post</p>
+        <hr>
+    </div>
+        
+    
+    {% for new, des, i, cont in context %}
+        <div class="data">
 
         <img src="{{i}}" alt="" style="height: 50px;width: 50px;">
         <p>{{new}}. <a href="{{cont}}">Read More..</a></p> 
