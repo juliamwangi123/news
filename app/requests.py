@@ -18,6 +18,7 @@ def getHeadline():
     news = []
     img = []
     src =[]
+    timePosted=[]
 
     for i in range(len(articles)):
         myarticles = articles[i]
@@ -27,9 +28,10 @@ def getHeadline():
         desc.append(myarticles['description'])
         img.append(myarticles['urlToImage'])
         src.append(myarticles['url'])
+        timePosted.append(myarticles['publishedAt'])
 
 
-    mylist = zip(news, desc, img, src)
+    mylist = zip(news, desc, img, src, timePosted)
 
 
 

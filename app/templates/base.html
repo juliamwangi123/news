@@ -173,12 +173,13 @@
     </div>
         
     
-    {% for new, des, i, cont in context %}
+    {% for new, des, i, cont,time in context %}
         <div class="data">
 
         <img src="{{i}}" alt="" style="height: 50px;width: 50px;">
         <p>{{new}}. <a href="{{cont}}">Read More..</a></p> 
-        <hr> 
+
+        <small>Posted at {{time}}</small>
     </div>
    
         {%endfor%}
