@@ -96,4 +96,4 @@ def business():
 
 
     mylist = zip(news, desc, img, src, timePosted)
-    return render_template('bbc.html', title="bbc", context=mylist)
+    return render_template('business.html', title="bbc", context=mylist)
