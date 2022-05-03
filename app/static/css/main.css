@@ -337,6 +337,7 @@ nav #bbcnav ul li a {
     color: black!important;
     font-size: 14px;
     font-weight: 800;
+    padding: 20p;
 
 }
 
@@ -349,6 +350,7 @@ nav #bbcnav  ul {
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -356,12 +358,22 @@ nav #bbcnav ul li  {
     
     /* background-color: teal; */
     margin-left: 80px;
-    border-left: 2px solid silver;
+    border-right: 2px solid silver;
 }
-.bbc, .bbc2, .bbc3{
+.bbc, .bbc2{
     background-color: black;
     color: white;
     margin-left: 2px;
     font-size: 25px;
-    width: 30px;
+    width: 80px;
+}
+.bbc3{
+
+    background-color: black;
+    color: white;
+    width: 80px;
+    font-size: 25px;
+
+
+
 }
