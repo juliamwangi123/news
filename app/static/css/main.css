@@ -328,6 +328,7 @@ position: relative;
     color: white;
     font-size: 40px;
     font-weight: 800;
+    margin-left: 20px;
 }
 
  nav #bbcnav{
@@ -337,13 +338,14 @@ nav #bbcnav ul li a {
     color: black!important;
     font-size: 14px;
     font-weight: 800;
-    padding: 20p;
 
 }
+
 
 nav #bbcnav {
     /* background-color: white; */
     width: 100%;
+    position: relative;
 }
 
 nav #bbcnav  ul {
@@ -364,16 +366,22 @@ nav #bbcnav ul li  {
     background-color: black;
     color: white;
     margin-left: 2px;
-    font-size: 25px;
+    font-size: 30px;
     width: 80px;
+    
 }
 .bbc3{
 
     background-color: black;
     color: white;
     width: 80px;
-    font-size: 25px;
+    font-size: 30px;
 
 
 
+}
+.bbcLarge{
+    position: absolute;
+    left: 0;
+    top: -30%;
 }
