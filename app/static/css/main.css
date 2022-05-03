@@ -341,12 +341,15 @@ nav #bbcnav ul li a {
 }
 
 nav #bbcnav {
-    background-color: white;
+    /* background-color: white; */
+    width: 100%;
 }
 
 nav #bbcnav  ul {
     display: flex;
     text-align: center;
+    align-items: center;
+
 }
 
 nav #bbcnav ul li  {
@@ -354,4 +357,11 @@ nav #bbcnav ul li  {
     /* background-color: teal; */
     margin-left: 80px;
     border-left: 2px solid silver;
+}
+.bbc, .bbc2, .bbc3{
+    background-color: black;
+    color: white;
+    margin-left: 2px;
+    font-size: 25px;
+    width: 30px;
 }
