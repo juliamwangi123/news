@@ -263,6 +263,7 @@ position: relative;
     display: flex;
     border-bottom: 2px solid gray;
     margin-right: 15px;
+    position: relative;
    
 }
 .data p{
@@ -284,3 +285,14 @@ hr{
     font-weight: 700;
 }
 
+.time{
+   margin-left: 10px;
+   margin-top: 15px;
+   /* font-weight: 700; */
+   /* position: absolute; */
+   bottom: 0;
+}
+.inside{
+    display: flex;
+    flex-direction: column;
+}

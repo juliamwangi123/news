@@ -177,9 +177,12 @@
         <div class="data">
 
         <img src="{{i}}" alt="" style="height: 50px;width: 50px;">
-        <p>{{new}}. <a href="{{cont}}">Read More..</a></p> 
+        <div class="inside">
+            <p>{{new}}. <a href="{{cont}}">Read More..</a></p> 
 
-        <small>Posted at {{time}}</small>
+            <small class="time">Posted at: {{time}}</small>
+        </div>
+       
     </div>
    
         {%endfor%}
