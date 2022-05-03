@@ -240,9 +240,38 @@ nav{
 
 .lastsec{
     margin: 15px;
-    height: 50%;
+    height: 60%;
     width: 100%;
 
 
 
 }
+
+
+#section5{
+margin-top: 60px;
+display: flex;  
+flex-wrap: wrap;
+/* height: 500px; */
+
+
+}
+
+.data{
+    width: 30%;
+    display: flex;
+    border-bottom: 2px solid gray;
+    margin-right: 15px;
+   
+}
+.data p{
+    font-size: 12px;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+hr{
+    width: 4px;
+}
+
+

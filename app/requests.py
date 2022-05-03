@@ -9,7 +9,7 @@ from flask import render_template
 # api_key =app.config['MOVIE_API_KEY']
 
 @app.route('/')
-def getHeadlines():
+def getHeadline():
     newsapi =NewsApiClient(api_key='9415e0bb8a0b4215bbe997557e470d40')
     topheadlines =newsapi.get_top_headlines(country='us')
 
@@ -32,6 +32,5 @@ def getHeadlines():
     mylist = zip(news, desc, img, src)
 
 
-    # return render_template('index.html', context = mylist)
 
-    return render_template('headlines.html', title="topNews", context = mylist)
+    return render_template('base.html', title="topNews", context = mylist)

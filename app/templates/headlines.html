@@ -1,22 +1,18 @@
+{% extends 'base.html' %}
+{%block content %}
+    {% for new, des, i, cont in context %}
 
-
-
-
-
-
-{% extends 'base.html'%}
-
-{%block content%}
-{%for new, des, i, cont  in context %}
-
-    <img src="{{i}}" alt="" style="height: 200px; width: 200px;">
-    <h3>News: </h3> {{new}}
-    <h4>Description:  {{des}}     <a href="cont">Read more....</a>
-    </h4>
-    <p>{{name}}</p>
+    <!-- <img src="{{i}}" alt=""> -->
+    <h3>News: </h3> {{new}} {{cont}}
+    <h4>Description: </h4> {{des}}
 
     {% endfor %}
-{%endblock%}
+
+{% endblock %}
+
+
+   
+
 
 
 
