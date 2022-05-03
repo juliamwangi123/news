@@ -97,3 +97,32 @@ def business():
 
     mylist = zip(news, desc, img, src, timePosted)
     return render_template('business.html', title="business", context=mylist)
+
+@app.route('/cnn')
+def cnn():
+
+    newsapi =NewsApiClient(api_key='c9ec58711b3b40718d64f2d5c915c035')
+    topheadlines = newsapi.get_top_headlines(sources='cnn')
+
+
+    articles = topheadlines['articles']
+    desc = []
+    news = []
+    img = []
+    src =[]
+    timePosted=[]
+
+
+    for i in range(len(articles)):
+        myarticles = articles[i]
+
+
+        news.append(myarticles['title'])
+        desc.append(myarticles['description'])
+        img.append(myarticles['urlToImage'])
+        src.append(myarticles['url'])
+        timePosted.append(myarticles['publishedAt'])
+
+
+    mylist = zip(news, desc, img, src, timePosted)
+    return render_template('cnn.html', title="cnn", context=mylist)
