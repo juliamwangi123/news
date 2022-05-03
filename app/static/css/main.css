@@ -463,4 +463,58 @@ nav #bbcnav ul li  {
     padding: 3px 12px;
   }
 
+#bbcBlock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
 
+.news-card {
+    /* position: relative; */
+    height: 450px;
+    border: 2px solid blue;
+    width: 350px;
+    margin:10px
+    }
+
+/* .news-card-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      } */
+
+      .news-card-image {
+        width: 100%;
+        height: 70%; 
+        /* display: block;
+        object-fit: cover;
+        backface-visibility: hidden;
+        z-index: -1; */
+      } 
+
+      /* .wrapper {
+        position: absolute;
+        bottom: 0rem;
+        padding: 1rem;
+        color: white;
+      } */
+      /* .carditle{
+        transition: color 1s ease;
+        margin-bottom: .5rem;
+        font-weight: 900;
+      } */
+      /* .date{
+        font-size: .7rem;
+        margin-bottom: .5rem;
+        color: #CCC;
+      } */
+      /* .details-wrapper{
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 1.5s ease, opacity 1s ease;
+      } */
+
+    

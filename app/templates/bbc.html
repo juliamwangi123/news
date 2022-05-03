@@ -91,21 +91,23 @@
 
   <!-- section2 starts here -->
   
-  <section>
+ 
 
+  <section id="bbcBlock">
     {% for new, des, i, cont,time in context %}
-    <div class="data">
 
-    <img src="{{i}}" alt="" style="height: 80px;width: 80px;">
-    <div class="inside">
-        <p>{{new}}. <a href="{{cont}}">Read More..</a></p> 
-
-        <small class="time">Published at: {{time}}</small>
+    <div class="news-card">
+      <a href="#" class="news-card-link"></a>
+      <img src="{{i}}" alt="" class="news-card-image">
+      <div class="wrapper">
+        <h4 class="carditle">{{new}}</h4>
+        <div class="date">time</div>
+        <div class="details-wrapper">
+          <p class="excerpt">{{time}}</p>
+         
+        </div>
+      </div>
     </div>
-   
-</div>
-
     {%endfor%}
-
 
   </section>

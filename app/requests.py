@@ -10,7 +10,7 @@ from flask import render_template
 
 @app.route('/')
 def getHeadline():
-    newsapi =NewsApiClient(api_key='9415e0bb8a0b4215bbe997557e470d40')
+    newsapi =NewsApiClient(api_key='c9ec58711b3b40718d64f2d5c915c035')
     topheadlines =newsapi.get_top_headlines(country='us')
 
     articles = topheadlines['articles']
@@ -42,8 +42,8 @@ def getHeadline():
 @app.route('/bbc')
 def bbc():
 
-    newsapi =NewsApiClient(api_key='9415e0bb8a0b4215bbe997557e470d40')
-    topheadlines = newsapi.get_top_headlines(sources="bbc-news")
+    newsapi =NewsApiClient(api_key='c9ec58711b3b40718d64f2d5c915c035')
+    topheadlines = newsapi.get_top_headlines(sources='bbc-news')
 
 
     articles = topheadlines['articles']
