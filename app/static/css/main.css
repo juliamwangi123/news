@@ -211,6 +211,7 @@ nav{
 .first{
     height: 100%;
     margin:8px;
+    position: relative;
 }
 
 #section4{
@@ -221,6 +222,8 @@ nav{
 .second{
     height: 100%;
     margin:8px;
+    position: relative;
+
 }
 
 .last{
@@ -235,6 +238,7 @@ nav{
     height: 50%;
     width: 100%;
     margin: 15px;
+    position: relative;
 
 }
 
@@ -242,6 +246,7 @@ nav{
     margin: 15px;
     height: 60%;
     width: 100%;
+    position: relative;
 
 
 
@@ -272,9 +277,6 @@ position: relative;
     margin-left: 10px;
 }
 
-hr{
-    width: 4px;
-}
 .heading{
     position: absolute;
     top: -5%;
@@ -295,4 +297,25 @@ hr{
 .inside{
     display: flex;
     flex-direction: column;
+}
+.inner{
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+
+.inner h5{
+    font-weight: 800;
+}
+.innerclass{
+    display: flex;
+}
+
+.innerclass p{
+    margin: 5px;
+    border: 1px solid white;
+    padding: 3px;
+    font-size: 15px;
+    border-radius: 5px;
 }
