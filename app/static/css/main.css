@@ -305,7 +305,7 @@ position: relative;
 }
 
 
-.inner h5{
+.inner h5, .inner h6{
     font-weight: 800;
 }
 .innerclass{
